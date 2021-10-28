@@ -56,14 +56,17 @@ public class Main extends javax.swing.JFrame {
         jButton11.setBorderPainted(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculator");
+        setLocationByPlatform(true);
+        setResizable(false);
 
         txtResultSub.setBackground(new java.awt.Color(255, 255, 255));
-        txtResultSub.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
+        txtResultSub.setFont(new java.awt.Font("Inter", 0, 16)); // NOI18N
         txtResultSub.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         txtResultSub.setOpaque(true);
 
@@ -124,7 +127,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         btnPer.setFont(new java.awt.Font("Inter", 1, 14)); // NOI18N
-        btnPer.setText("%");
+        btnPer.setText("MOD");
         btnPer.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnPer.setBorderPainted(false);
         btnPer.addActionListener(new java.awt.event.ActionListener() {
@@ -139,7 +142,7 @@ public class Main extends javax.swing.JFrame {
         btn9.setBorderPainted(false);
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn9ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -149,7 +152,7 @@ public class Main extends javax.swing.JFrame {
         btn6.setBorderPainted(false);
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn6ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -159,7 +162,7 @@ public class Main extends javax.swing.JFrame {
         btn3.setBorderPainted(false);
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn3ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -169,7 +172,7 @@ public class Main extends javax.swing.JFrame {
         btnDot.setBorderPainted(false);
         btnDot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDotActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -179,7 +182,7 @@ public class Main extends javax.swing.JFrame {
         btn2.setBorderPainted(false);
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn2ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -189,7 +192,7 @@ public class Main extends javax.swing.JFrame {
         btn5.setBorderPainted(false);
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn5ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -199,7 +202,7 @@ public class Main extends javax.swing.JFrame {
         btn8.setBorderPainted(false);
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn8ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -209,7 +212,7 @@ public class Main extends javax.swing.JFrame {
         btn0.setBorderPainted(false);
         btn0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn0ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -219,7 +222,7 @@ public class Main extends javax.swing.JFrame {
         btn1.setBorderPainted(false);
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn1ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -239,7 +242,7 @@ public class Main extends javax.swing.JFrame {
         btn7.setBorderPainted(false);
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn7ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -249,7 +252,7 @@ public class Main extends javax.swing.JFrame {
         btn4.setBorderPainted(false);
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn4ActionPerformed(evt);
+                btnNumsActionPerformed(evt);
             }
         });
 
@@ -381,6 +384,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
     private void btnEqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqActionPerformed
@@ -399,6 +403,11 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnEqActionPerformed
 
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        txtResultSub.setText("");
+        txtResult.setText("");
+    }  
+    
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
         appendToResultSub(" - ");
     }//GEN-LAST:event_btnSubActionPerformed
@@ -406,10 +415,6 @@ public class Main extends javax.swing.JFrame {
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         appendToResultSub(" + ");
     }//GEN-LAST:event_btnAddActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-
-    }//GEN-LAST:event_jButton11ActionPerformed
 
     private void btnMulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMulActionPerformed
         appendToResultSub(" x ");
@@ -428,54 +433,19 @@ public class Main extends javax.swing.JFrame {
         txtResultSub.setText(prevTxt + text);
     }
 
-    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        appendToResultSub("9");
-    }//GEN-LAST:event_btn9ActionPerformed
-
-    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        appendToResultSub("6");
-    }//GEN-LAST:event_btn6ActionPerformed
-
-    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        appendToResultSub("3");
-    }//GEN-LAST:event_btn3ActionPerformed
-
     private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
         appendToResultSub(".");
     }//GEN-LAST:event_btnDotActionPerformed
 
-    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        appendToResultSub("2");
-    }//GEN-LAST:event_btn2ActionPerformed
+    private void btnNumsActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        appendToResultSub(evt.getActionCommand());
+    } 
 
-    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        appendToResultSub("5");
-    }//GEN-LAST:event_btn5ActionPerformed
-
-    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        appendToResultSub("8");
-    }//GEN-LAST:event_btn8ActionPerformed
-
-    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        appendToResultSub("6");
-    }//GEN-LAST:event_btn0ActionPerformed
-
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        appendToResultSub("1");
-    }//GEN-LAST:event_btn1ActionPerformed
-
-    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+    private void btnClear
+    (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         txtResultSub.setText("");
         txtResult.setText("");
     }//GEN-LAST:event_btnClearActionPerformed
-
-    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        appendToResultSub("7");
-    }//GEN-LAST:event_btn7ActionPerformed
-
-    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        appendToResultSub("4");
-    }//GEN-LAST:event_btn4ActionPerformed
 
     private void btnBackspaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackspaceActionPerformed
         String txt = txtResultSub.getText();
