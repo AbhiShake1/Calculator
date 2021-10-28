@@ -25,7 +25,6 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton11 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         txtResultSub = new javax.swing.JLabel();
         txtResult = new javax.swing.JLabel();
@@ -49,16 +48,6 @@ public class Main extends javax.swing.JFrame {
         btn4 = new javax.swing.JButton();
         btnBackspace = new javax.swing.JButton();
         btnBraces = new javax.swing.JButton();
-
-        jButton11.setFont(new java.awt.Font("Inter", 1, 14)); // NOI18N
-        jButton11.setText("0");
-        jButton11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton11.setBorderPainted(false);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNumsActionPerformed(evt);
-            }
-        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculator");
@@ -520,7 +509,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton btnMul;
     private javax.swing.JButton btnPer;
     private javax.swing.JButton btnSub;
-    private javax.swing.JButton jButton11;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel txtResult;
     private javax.swing.JLabel txtResultSub;
